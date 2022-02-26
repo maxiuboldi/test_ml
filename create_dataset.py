@@ -15,6 +15,6 @@ dataset['target'] = dataset['target'].astype(int).map(dict(enumerate(data.target
 
 print('\nExportando datos')
 
-dataset.to_pickle('data\la_nacion_dataset.pkl')
+dataset.to_pickle('data\la_nacion_dataset.pkl', protocol=4)
 
 print('\nListo!')
